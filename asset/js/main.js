@@ -37,12 +37,12 @@ function AddKeranjang ( name1, harga) {
 		//img1.style.BackgroundImage = img;
 		name_order.textContent = "Menu : " + name1;
 		harga_order.textContent = "Harga : Rp " + harga;
-		total.textContent = "Total : Rp " + harga
+		total.textContent = "Total : Rp " + harga;
 		SendWhatsapp(name1, harga) ;
 }
 function SendWhatsapp(name, harga) {
 	try {
-		const UrlWhatsapp = 'https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan :  ${name}  Harga :   ${harga}; 
+		const UrlWhatsapp = 'https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan :  ${name}  Harga :   ${harga}'; 
 		setTimeout(()=> {
 			window.open(UrlWhatsapp, "_blank")
 		}, 1000)
