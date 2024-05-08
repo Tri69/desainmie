@@ -1,0 +1,148 @@
+html {
+	margin: 0;padding: 0;
+	background: url('../gambar/background.png') no-repeat center center fixed;
+	-webkit-background-size : cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	scroll-behavior: smooth;
+	background-size: cover;
+	font-family: arial;overflow-x: hidden;
+}
+.logo {
+	width: 45px;padding: 5px;
+}
+.navbar {
+	display: flex; justify-content: space-between;
+	align-items: center; padding: 2px;
+}
+.nav_ul {
+	display: flex; justify-content: space-between;
+}
+.nav_ul li {
+	list-style: none;font-size: 20px;
+	margin-left: 6px;
+	padding: 18px;
+	font-weight: bold;
+}
+.nav_ul li a {
+	text-decoration: none;
+	color: black;
+}
+.keranjang {
+	margin-right: 40px; width: 27px;
+}
+main {
+
+}
+.button {
+	border-radius: 23px; height: 39px;border:  1px solid black;font-size: 18px;
+	width: 155px;background: black;color: white;font-weight: bold;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .4);cursor: pointer;
+}
+ 
+.bakso_img {
+	float: right;border-radius: 50%;box-shadow: 0px 10px 18px rgba(0, 0, 0, .5);
+	background-repeat: no-repeat;margin-right: 60px;
+}
+.caption {
+	margin-top: 50px ; margin-left: 120px;
+}
+.caption h1 {
+	font-family:  verdana; font-size: 43px;
+}
+.caption article {
+	margin-right: 20px;
+}
+.section2 {
+	margin-top: 50px;margin-right: -20px;
+	clear: both;padding: 20px;
+	background:  white;z-index: 1000;
+}
+.menu {
+	width: 280px; height: 390px; box-shadow: 0px 5px 7px rgba(0, 0, 0, .3);
+	border-radius: 5px; text-align: center;
+}
+.menu:hover {
+	box-shadow:0px 6px 10px rgba(0, 0, 0, .3);
+	padding: 5px;animation: 2s ease-in-out;
+}
+.menu_list {
+ display: flex; justify-content: space-around;
+
+}
+.menu_img {
+	width: 100px;
+}
+
+.close {
+	display: flex; justify-content: right;font-size: 25px; color: black;
+	cursor: pointer;
+}
+.Myorder {
+	width: 100%; display: none;z-index: 1;
+	height: 100%; background: whitesmoke;
+}
+.Myorder_content {
+	display: none;
+	position: fixed; top: 30%;left: 50%;box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+	transform: translate(-50%, -50%);border-radius: 4px;
+	width: 400px; background: whitesmoke;padding: 10px;
+}
+.Myorder_content h1 {
+	text-align: center;
+}
+.Myorder_list {
+	margin-right: 37px;
+	border-bottom: 1px solid grey;
+}
+.Myorder_list li {
+	list-style: none;
+	border-radius: ;
+}
+.button_order {
+	width: 170px; height: 35px; padding: 2px; border-radius: 5px;
+	background: greenyellow;border: 1px solid greenyellow;font-size: 25px;
+	cursor: pointer; box-shadow: 0px 4px 9px rgba(0, 0, 0, .3);
+}
+.section3 {
+	background: grey;
+	padding: 10px;
+	margin-right: -40px;
+}
+.section3 .footer {
+	display: flex;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+.footer ul li {
+	padding: 10px;
+	list-style: none;
+}
+@media(max-width: 678px) {
+	.nav_ul li {
+		font-size: 15px;
+	}
+	.menu_list {
+		display: block;
+	}
+	.caption {
+		margin-left: 30px;
+		margin-top: 20px;
+		margin-right: -10px;
+	}
+	.section2 {
+		text-align: center;
+	}
+	.menu_list .menu {
+		margin-top: 10px;
+		margin-left: 40px;
+		margin-right: 40px;
+		padding: 10px;
+	}
+	.section3 {
+		margin-right: -90px;
+	}
+	.section3 .footer {
+		display: block;
+	}
+}
