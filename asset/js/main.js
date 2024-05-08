@@ -42,7 +42,7 @@ function AddKeranjang ( name1, harga) {
 }
 function SendWhatsapp(name, harga) {
 	try {
-		const UrlWhatsapp = 'https://wa.me/628119072423?text=Selamat Siang, saya mau pesan :  ${name}  Harga :   ${harga}; 
+		const UrlWhatsapp = 'https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan :  ${name}  Harga :   ${harga}; 
 		setTimeout(()=> {
 			window.open(UrlWhatsapp, "_blank")
 		}, 1000)
